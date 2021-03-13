@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Operaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Operaciones</h2>
+
+<ul>
+    <li><h3>@Html.ActionLink("Suma","Operaciones_Aritmeticas", "Operaciones", new {operar = 1, valor1 = 15, valor2 = 30 }, null) </h3></li>
+    <li><h3>@Html.ActionLink("Resta", "Operaciones_Aritmeticas", "Operaciones", new { operar = 2, valor1 = 30, valor2 = 15 }, null) </h3></li>
+    <li><h3>@Html.ActionLink("Multiplicación", "Operaciones_Aritmeticas", "Operaciones", new { operar = 3, valor1 = 15, valor2 = 10 }, null) </h3></li>
+    <li><h3>@Html.ActionLink("División", "Operaciones_Aritmeticas", "Operaciones", new { operar = 4, valor1 = 40, valor2 = 20 }, null) </h3></li>
+</ul>
+

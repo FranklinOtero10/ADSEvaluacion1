@@ -1,0 +1,19 @@
+﻿@model ADSEvaluacion1.Models.Operaciones
+
+@{
+    ViewBag.Title = "Operaciones_Aritmeticas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Respuesta</h2>
+
+<hr />
+
+Operacion: @Model.operaracion 
+<br />
+Respuesta: @Model.resultado
+<br />
+
+<a href="javascript:history.back()" class="btn btn-info">Regresar</a>
+
+
